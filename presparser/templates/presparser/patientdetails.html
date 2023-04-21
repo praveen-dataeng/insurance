@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">Headings</th>
+        <th scope="col" class="text-center">Details</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Patient</td>
+        <td class="">{{v.Patient_name}}</td>
+      </tr>
+      <tr>
+        <td>Contact number</td>
+        <td class="">{{v.Patient_Phone_number}}</td>
+      </tr>
+      <tr>
+        <td>Mediacal issues</td>
+        <td class="">{{v.Patient_Mediacal_issues}}</td>
+      </tr>
+      <tr>
+        <td>HBV-Vaccination status</td>
+        <td class="">{{v.Pateint_Vaccination_status}}</td>
+      </tr>     
+    </tbody>
+  </table>
+{% endblock content %}

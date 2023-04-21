@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">Details</th>
+        <th scope="col" class="text-center">Prescription</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Patient</td>
+        <td class="">{{v.pateint_name}}</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td class="">{{v.patient_address}}</td>
+      </tr>
+      <tr>
+        <td>Medicines</td>
+        <td class="">{{v.medicines}}</td>
+      </tr>
+      <tr>
+        <td>Prescription</td>
+        <td class="">{{v.instructions}}</td>
+      </tr>
+      <tr>
+        <td>Refill Instrucctions</td>
+        <td class="">{{v.refill_instruction}}</td>
+      </tr>      
+    </tbody>
+  </table>
+{% endblock content %}
